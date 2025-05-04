@@ -9,7 +9,7 @@ function ContentContext({ children }) {
   const [selectedTopic, setSelectedTopic] = useState();
   const [showTopic, setShowTopic] = useState();
 
-  const [content, setContent] = useState()
+  const [content, setContent] = useState([])
   return (
     <contextContent.Provider
       value={{

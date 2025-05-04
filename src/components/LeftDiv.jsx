@@ -30,6 +30,7 @@ function LeftDiv() {
       setSelectedTopic(selected);
       setClickedTopic(selected)
       setContent(objectContent[selectedTechnology][selected]);
+      
     }
   }
   return (
