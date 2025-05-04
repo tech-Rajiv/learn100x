@@ -3,9 +3,9 @@ import ListSelect from "./ListSelect.jsx";
 
 function CatagoryDiv({ options, heading, check }) {
   return (
-    <div className="py-2 mt-3">
+    <div className="py-2 mt-3 w-full">
       <h1 className=" text-2xl underline underline-offset-8">{heading}</h1>
-      <div className="mt-2 flex gap-2 flex-nowrap">
+      <div className="mt-2 flex gap-2 flex-wrap">
         {options &&
           options.map((chips) => {
             const cls = check == chips ? "bg-zinc-300" : "";

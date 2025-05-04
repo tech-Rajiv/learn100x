@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import CatagoryDiv from "./CatagoryDiv";
 import { contextContent } from "../contexts/ContentContext";
-import { objectContent } from "../utils/Constants.jsx";
+import { objectContent } from "../utils/index.js";
 
 function LeftDiv() {
   const [clickedTech, setClickedTech] = useState()
@@ -34,7 +34,7 @@ function LeftDiv() {
     }
   }
   return (
-    <div>
+    <div className="">
       <div onClick={handelTechnology}>
         <CatagoryDiv options={technology} heading={"Technologys"} check={clickedTech}/>
       </div>

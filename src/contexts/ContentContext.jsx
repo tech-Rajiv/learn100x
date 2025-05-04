@@ -1,5 +1,5 @@
-import React, { createContext, useEffect, useState } from "react";
-import { objectContent } from "../utils/Constants.jsx";
+import React, { createContext,  useState } from "react";
+import { objectContent } from "../utils/index.js";
 
 export const contextContent = createContext();
 
