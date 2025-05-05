@@ -8,6 +8,7 @@ function ContentContext({ children }) {
   const [selectedTechnology, setSelectedTechnology] = useState();
   const [selectedTopic, setSelectedTopic] = useState();
   const [showTopic, setShowTopic] = useState();
+  const [openModel, setOpenModel] = useState();
 
   const [content, setContent] = useState([])
   return (
@@ -20,7 +21,8 @@ function ContentContext({ children }) {
         setSelectedTopic,
         content,
         showTopic,setShowTopic,
-        setContent
+        setContent,
+        openModel,setOpenModel
       }}
     >
       {children}
