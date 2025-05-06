@@ -1,48 +1,64 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { contextContent } from "../contexts/ContentContext";
 
 function ContentDiv() {
-  const { content } = useContext(contextContent);
+  const { content, savedContentArray, setSavedContentArray } =
+    useContext(contextContent);
+
+  const handelBookmark = (e, content, index) => {
+    if(savedContentArray.includes(content)){
+      console.log("already added, now removing")
+      setSavedContentArray((prev)=>prev.filter((item)=>item!=content))
+      console.log("removed")
+      return
+    }
+      setSavedContentArray([...savedContentArray, content]);
+      console.log("saved,", content);
+      console.log("prev", savedContentArray);
+  };
   return (
     <div className="p-2 sm:px-5">
-      
-      {content.map((item, index) => {
-        if (item.type == "heading")
+      {content &&
+        content.map((item, index) => {
           return (
-            <h1
-              key={index}
-              className="text-xl text-[#40667b] sm:mt-5 font-bold mb-5 mt-5"
-            >
-              {item.content}
-            </h1>
-          );
-        if (item.type == "paragraph")
-          return (
-            <div key={index} className="text-xl  mt-3 sm:mt-2 font-mono">
-              {item.content}
+            <div key={index}>
+              <div className="mt-5 text-end flex items-center justify-end gap-1">
+                <span
+                  onClick={(event) => handelBookmark(event, item, index)}
+                  className="px-2 cursor-pointer"
+                >
+                  bookmark
+                  <i
+                    className={`${
+                      savedContentArray.includes(item) ? "ri-bookmark-fill":"ri-bookmark-line"} text-xl text-blue-500`}
+                  ></i>
+                </span>
+              </div>
+
+              <div>
+                {item &&
+                  item.map((lines, i) => {
+                    if (lines.type == "heading") {
+                      return (
+                        <div
+                          key={i}
+                          className="text-blue-500 text-xl font-semibold"
+                        >
+                          {lines.content}
+                        </div>
+                      );
+                    }
+                    if (lines.type == "paragraph") {
+                      return <div key={i}>{lines.content}</div>;
+                    }
+                  })}
+              </div>
+              <div className="my-5">
+                <hr className="text-zinc-500" />
+              </div>
             </div>
           );
-        if (item.type == "image")
-          return (
-            <div
-              key={index}
-              className="max-w-sm  mx-auto mt-5 sm:mt-5 rounded-md overflow-hidden"
-            >
-              <img
-                className="w-full"
-                loading="lazy"
-                src={item.content}
-                alt="image"
-              />{" "}
-            </div>
-          );
-        if (item.type == "space")
-          return (
-            <div key={index} className="mt-10 mb-10">
-              <hr className="text-zinc-400" />
-            </div>
-          );
-      })}
+        })}
     </div>
   );
 }

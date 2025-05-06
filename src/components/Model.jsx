@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { contextContent } from "../contexts/ContentContext";
+import { NavLink } from "react-router-dom";
 
 function Model() {
   const { openModel, setOpenModel } = useContext(contextContent);
@@ -15,10 +16,14 @@ function Model() {
       <div className="text-end mr-2 cursor-pointer" onClick={handleClose}>
         <i className="ri-close-large-line text-2xl"></i>
       </div>
-      <div>hey</div>
-      <div>kk</div>
-      <div>kk</div>
-      <div>kk</div>
+      <hr className="text-zinc-500" />
+      <div className="flex gap-2 items-center" onClick={handleClose}>
+        <NavLink to={"/savedcontent"} >
+        bookmark
+        <i className="ri-bookmark-fill text-lg"></i>
+        </NavLink>
+      </div>
+      <div>Leetcode</div>
     </div>
   );
 }

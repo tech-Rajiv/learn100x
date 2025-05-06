@@ -11,6 +11,7 @@ function ContentContext({ children }) {
   const [openModel, setOpenModel] = useState();
 
   const [content, setContent] = useState([])
+  const [savedContentArray, setSavedContentArray] = useState([])
   return (
     <contextContent.Provider
       value={{
@@ -22,7 +23,7 @@ function ContentContext({ children }) {
         content,
         showTopic,setShowTopic,
         setContent,
-        openModel,setOpenModel
+        openModel,setOpenModel,savedContentArray,setSavedContentArray
       }}
     >
       {children}

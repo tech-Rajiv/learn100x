@@ -1,133 +1,146 @@
 export const internetHistory = [
-  { type: "heading", content: "The Beginning of the Internet" },
-  {
-    type: "paragraph",
-    content:
-      "The internet started in the late 1960s as a U.S. military project called ARPANET. It was designed to create a secure communication network that could survive a nuclear attack.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "On October 29, 1969, the first message was sent between two computers at UCLA and Stanford. The system crashed after sending just two letters — 'L' and 'O' — but it marked the start of networked communication.",
-  },
-  { type: "space" },
+  [
+    { type: "heading", content: "The Beginning of the Internet" },
+    {
+      type: "paragraph",
+      content:
+        "The internet started in the late 1960s as a U.S. military project called ARPANET. It was designed to create a secure communication network that could survive a nuclear attack.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "On October 29, 1969, the first message was sent between two computers at UCLA and Stanford. The system crashed after sending just two letters — 'L' and 'O' — but it marked the start of networked communication.",
+    },
+    { type: "space" },
+  ],
+  [
+    { type: "heading", content: "Why Was the Internet Created?" },
+    {
+      type: "paragraph",
+      content:
+        "During the Cold War, the U.S. Department of Defense wanted a decentralized communication network that would keep working even if parts of it were destroyed.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Scientists also needed a better way to share data across universities and research centers. Traditional methods like mail or direct phone calls were too slow or limited.",
+    },
+  ],
+  [
+    { type: "space" },
 
-  { type: "heading", content: "Why Was the Internet Created?" },
-  {
-    type: "paragraph",
-    content:
-      "During the Cold War, the U.S. Department of Defense wanted a decentralized communication network that would keep working even if parts of it were destroyed.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "Scientists also needed a better way to share data across universities and research centers. Traditional methods like mail or direct phone calls were too slow or limited.",
-  },
-  { type: "space" },
+    { type: "heading", content: "Key Developments in the 1970s" },
+    {
+      type: "paragraph",
+      content:
+        "In the 1970s, researchers developed TCP/IP — the communication rules that still power the internet today.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "The first version of email was sent in 1971, and it quickly became a popular tool among researchers.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "By 1973, the ARPANET had already expanded to international connections with Norway and the UK.",
+    },
+    { type: "space" },
+  ],
+  [
+    { type: "heading", content: "The Internet Grows in the 1980s" },
+    {
+      type: "paragraph",
+      content:
+        "In 1983, TCP/IP became the standard communication protocol for ARPANET. This marked the official birth of the modern internet.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "The Domain Name System (DNS) was introduced in 1984, allowing people to use easy-to-remember domain names like example.com instead of complicated IP addresses.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "By the end of the decade, many universities and institutions around the world had joined the growing network.",
+    },
+  ],
+  [
+    { type: "space" },
 
-  { type: "heading", content: "Key Developments in the 1970s" },
-  {
-    type: "paragraph",
-    content:
-      "In the 1970s, researchers developed TCP/IP — the communication rules that still power the internet today.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "The first version of email was sent in 1971, and it quickly became a popular tool among researchers.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "By 1973, the ARPANET had already expanded to international connections with Norway and the UK.",
-  },
-  { type: "space" },
+    { type: "heading", content: "The 1990s: The Web Changes Everything" },
+    {
+      type: "paragraph",
+      content:
+        "In 1990, British scientist Tim Berners-Lee invented the World Wide Web — a system that made it easy to access information through web pages using browsers.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "The first web browser, Mosaic, launched in 1993. It allowed people to view text and images together, making the internet user-friendly and popular.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "In 1998, Google was founded. It changed how people searched for information and made navigating the internet much faster and smarter.",
+    },
+  ],
+  [
+    { type: "space" },
 
-  { type: "heading", content: "The Internet Grows in the 1980s" },
-  {
-    type: "paragraph",
-    content:
-      "In 1983, TCP/IP became the standard communication protocol for ARPANET. This marked the official birth of the modern internet.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "The Domain Name System (DNS) was introduced in 1984, allowing people to use easy-to-remember domain names like example.com instead of complicated IP addresses.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "By the end of the decade, many universities and institutions around the world had joined the growing network.",
-  },
-  { type: "space" },
+    { type: "heading", content: "The 2000s and Beyond" },
+    {
+      type: "paragraph",
+      content:
+        "With the rise of broadband, mobile phones, and Wi-Fi, the internet became accessible almost everywhere.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Social media platforms, streaming services, cloud computing, and e-commerce all grew rapidly during this period.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "The internet evolved from a research tool to a core part of everyday life — from entertainment to education to business.",
+    },
+  ],
+  [
+    { type: "space" },
 
-  { type: "heading", content: "The 1990s: The Web Changes Everything" },
-  {
-    type: "paragraph",
-    content:
-      "In 1990, British scientist Tim Berners-Lee invented the World Wide Web — a system that made it easy to access information through web pages using browsers.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "The first web browser, Mosaic, launched in 1993. It allowed people to view text and images together, making the internet user-friendly and popular.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "In 1998, Google was founded. It changed how people searched for information and made navigating the internet much faster and smarter.",
-  },
-  { type: "space" },
+    { type: "heading", content: "Impact of Internet History" },
+    {
+      type: "paragraph",
+      content:
+        "The internet started as a military project but became a powerful global communication system used by billions.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "It has reshaped economies, connected cultures, and changed how humans live, work, and think.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Understanding its history helps us appreciate the infrastructure and innovation behind what we use every day.",
+    },
+  ],
+  [
+    { type: "space" },
 
-  { type: "heading", content: "The 2000s and Beyond" },
-  {
-    type: "paragraph",
-    content:
-      "With the rise of broadband, mobile phones, and Wi-Fi, the internet became accessible almost everywhere.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "Social media platforms, streaming services, cloud computing, and e-commerce all grew rapidly during this period.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "The internet evolved from a research tool to a core part of everyday life — from entertainment to education to business.",
-  },
-  { type: "space" },
-
-  { type: "heading", content: "Impact of Internet History" },
-  {
-    type: "paragraph",
-    content:
-      "The internet started as a military project but became a powerful global communication system used by billions.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "It has reshaped economies, connected cultures, and changed how humans live, work, and think.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "Understanding its history helps us appreciate the infrastructure and innovation behind what we use every day.",
-  },
-  { type: "space" },
-
-  { type: "heading", content: "Conclusion" },
-  {
-    type: "paragraph",
-    content:
-      "The internet was not built overnight. It took decades of research, invention, and collaboration to become what it is today.",
-  },
-  {
-    type: "paragraph",
-    content:
-      "From ARPANET to the World Wide Web, its evolution shows how human problems and ideas can shape world-changing technology.",
-  },
+    { type: "heading", content: "Conclusion" },
+    {
+      type: "paragraph",
+      content:
+        "The internet was not built overnight. It took decades of research, invention, and collaboration to become what it is today.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "From ARPANET to the World Wide Web, its evolution shows how human problems and ideas can shape world-changing technology.",
+    },
+  ],
 ];
-
 
 export const internetHowItWorks = [
   { type: "heading", content: "What is the Internet?" },
@@ -270,7 +283,6 @@ export const internetHowItWorks = [
       "Understanding how it works helps us appreciate its power, its cost, and its impact on daily life.",
   },
 ];
-
 
 export const internetProtocols = [
   { type: "heading", content: "What is TCP/IP?" },
@@ -569,7 +581,6 @@ export const internetIpDns = [
       "They ensure that when you visit a site, the correct data is delivered to and from the right place — all within seconds.",
   },
 ];
-
 
 export const clientServerModel = [
   { type: "heading", content: "What is the Client-Server Model?" },
@@ -1002,4 +1013,3 @@ export const webBrowsersServers = [
       "Understanding how both work helps us appreciate the complexity of the web and how crucial these components are to the overall user experience.",
   },
 ];
-

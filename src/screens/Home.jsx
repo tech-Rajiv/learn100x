@@ -3,9 +3,6 @@ import ContentDiv from "../components/ContentDiv";
 import LeftDiv from "../components/LeftDiv";
 
 function Home() {
-
-  
-
   return (
     <div className="flex flex-col md:flex-row justify-center gap-5 max-w-5xl mx-auto py-2 px-2 ">
       <div className="flex-col gap-5 flex max-w-96 ">
